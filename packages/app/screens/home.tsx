@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Image } from 'react-native'
+import { View, Image, Text } from 'react-native'
 import tw from 'twrnc'
 import VersusIcon from 'app/components/VersusIcon'
 import UserProfile from 'app/components/UserProfile'
@@ -8,7 +8,7 @@ export default function HomeScreen() {
   return (
     <View style={tw`flex flex-1 p-4`}>
       <UserProfile info="남성 20대" nickname="졸음깨우는껌" />
-      <View style={tw.style(`flex flex-row`, { height: '80%' })}>
+      <View style={tw.style(`flex flex-row`, { height: '60%' })}>
         <Image
           source={{
             uri: 'https://image.shutterstock.com/image-illustration/temporary-permanent-choice-life-pictured-600w-1726904257.jpg'
@@ -28,6 +28,7 @@ export default function HomeScreen() {
           <VersusIcon />
         </View>
       </View>
+      <Text style={tw`text-white py-4`}>어떤게 더 좋아보임?</Text>
     </View>
   )
 }
