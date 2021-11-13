@@ -1,8 +1,6 @@
 import React from 'react'
 import { Dimensions } from 'react-native'
-import NativeCarousel, {
-  CarouselProps as NativeCarouselProps
-} from 'react-native-snap-carousel'
+import NativeCarousel from 'react-native-snap-carousel'
 
 interface CarouselProps {
   renderItem: () => JSX.Element
