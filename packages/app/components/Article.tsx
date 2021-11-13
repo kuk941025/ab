@@ -6,7 +6,7 @@ import VersusIcon from './VersusIcon'
 
 const Article: React.FC = () => {
   return (
-    <View style={tw`flex flex-1 p-4`}>
+    <View style={tw`flex flex-1 p-4 h-full`}>
       <UserProfile info="남성 20대" nickname="졸음깨우는껌" />
       <View style={tw.style(`flex flex-row`, { height: '60%' })}>
         <Image
