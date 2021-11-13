@@ -1,6 +1,6 @@
 import * as Linking from 'expo-linking'
 import type { NavigationContainer } from '@react-navigation/native'
-import type { BottomTabNavigatorParams } from './bottom-tab-navigator/types'
+// import type { BottomTabNavigatorParams } from './bottom-tab-navigator/types'
 import {
   HomeStackParams,
   PlaylistsStackParams,
@@ -9,7 +9,7 @@ import {
 
 type Props = React.ComponentProps<typeof NavigationContainer>['linking']
 
-function makeTabPath<Path extends keyof BottomTabNavigatorParams>(
+function makeTabPath<Path extends keyof any>(
   path: Path
 ): Path {
   return path
